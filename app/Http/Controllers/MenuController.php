@@ -76,17 +76,26 @@ class MenuController extends Controller
                 ]);
             } else {
                 $favorite = json_decode($user->favorites);
-                // dd($favorite);
-                foreach ($favorite as $key => $value) {
-                    if (in_array($id, $favorite)) {
-                        unset($favorite[$key]);
-                    } else {
-                        array_push($listFav, $value);
-                    }
-                }
+                // foreach ($favorite as $key => $value) {
+                //     // dd($value);
+                //     if (in_array($id, $favorite)) {
+                //         unset($favorite[array_search($id, $favorite)]);
+                //     } else {
+                //         array_push($listFav, $value);
+                //     }
+                // }
 
-                array_push($listFav, $id);
-                $fav2 = json_encode($listFav);
+                if (in_array($id, $favorite)) {
+                    unset($favorite[array_search($id, $favorite)]);
+                } else {
+                    array_push($favorite, $id);
+                }
+                // dd($favorite);
+
+                // if (!in_array($id, $listFav)) {
+                //     array_push($listFav, $id);
+                // }
+                $fav2 = json_encode($favorite);
                 // dd($listFav);
                 $user->update([
                     'favorites' => $fav2

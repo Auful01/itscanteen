@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-8">
                     <div >
-                        <p class="m-0" style="font-size: 13px;font-weight: 600;color:black">Nasi Goreng Original</p>
+                        <p class="m-0" style="font-size: 13px;font-weight: 600;color:black">${el.nama}</p>
                         <p style="font-size: 12px;font-weight: 600;color:grey">${rupiah(el.harga)}</p>
                     </div>
                 </div>
