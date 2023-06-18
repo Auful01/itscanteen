@@ -44,7 +44,7 @@ class TransaksiController extends Controller
 
     public function showCart($id)
     {
-        $data = Transaksi::with('user', 'menu.user')->where('order_id', $id)->where('status', '<>', 'cart')->first();
+        $data = Transaksi::with('user', 'menu.user')->where('order_id', $id)->first();
         return $this->success($data);
     }
 

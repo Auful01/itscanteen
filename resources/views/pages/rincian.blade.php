@@ -68,7 +68,7 @@
                 <p class="text-dark" style="font-weight: 900" id="status">Diantar</p>
             </div>
 
-            <a href="/review" class="btn btn-sm w-100 btn-primary text-bold py-2" style="border-radius: 25px; font-weight: 800">
+            <a href="" id="btn-lacak" class="btn btn-sm w-100 btn-primary text-bold py-2" style="border-radius: 25px; font-weight: 800">
                 Lacak
             </a>
         </div>
@@ -91,6 +91,8 @@
                     var fav = JSON.parse(user.favorites)
                     console.log(res);
                     var image = JSON.parse(res.gambar)
+
+                    $('#btn-lacak').attr('href', "/user/review?id=" + dataTr.order_id)
 
                     $('#gambar').attr('src', window.location.origin + '/storage/menu/' + image[0]);
                     $('#nama_owner').html(res.user.name);
