@@ -15,6 +15,7 @@
 
 @section('script')
 <script>
+    checkURL();
     $(document).ready(function () {
         $.ajax({
             url : '/api/transaksi',

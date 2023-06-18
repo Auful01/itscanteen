@@ -123,3 +123,10 @@
 </div>
 
 @endsection
+
+
+@section('script')
+    <script>
+        checkURL()
+    </script>
+@endsection

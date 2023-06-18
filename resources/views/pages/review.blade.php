@@ -81,7 +81,7 @@
                     $('#orderid').html(dataTr.order_id)
                     // $('#harga')
 
-                    $('#harga').html(rupiah(res.harga ));
+                    // $('#harga').html(rupiah(res.harga ));
                     $('#harga-menu').html(rupiah(res.harga * dataTr.qty ));
                     $('#deskripsi').html(res.deskripsi)
                     // total = res.harga
@@ -89,7 +89,7 @@
                     // totalByr = dataTr.total+ongkir;
                     // $('#total_makanan').html(rupiah(total * $('#qty').text()))
                     $('#ongkir').html(rupiah(ongkir))
-                    $('#total-bayar').html(rupiah(dataTr.total))
+                    $('#harga').html(rupiah(dataTr.total))
 
                     $('#status').html(dataTr.status)
 

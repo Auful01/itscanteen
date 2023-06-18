@@ -23,7 +23,14 @@
         </div>
         <div class="form-group">
             <label for="password" class="text-dark">Password</label>
-            <input type="text" name="password" id="password" class="form-control form-control-sm" placeholder="Password">
+            <div class="input-group">
+                <input type="password" name="" id="password" class="form-control " placeholder=""style="border-right: none !important">
+                <div class="input-group-append">
+                    <div class="input-group-text bg-white" style="border-left: none !important">
+                        <i class="fa fa-eye" id="togglePassword" onclick="showPw()"></i>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="d-flex justify-content-between">
@@ -73,6 +80,19 @@
 
 @section('script')
     <script>
+        function showPw() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                    document.getElementById("togglePassword").classList.remove('fa-eye');
+                    document.getElementById("togglePassword").classList.add('fa-eye-slash');
+                } else {
+                    x.type = "password";
+                    document.getElementById("togglePassword").classList.remove('fa-eye-slash');
+                    document.getElementById("togglePassword").classList.add('fa-eye');
+                }
+            }
+
         $('#btn-login').on('click', function () {
             $.ajax({
                 url : "/api/login",

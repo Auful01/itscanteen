@@ -121,14 +121,29 @@
             console.log(window.location.pathname);
             $('.btn-item').removeClass('text-primary').addClass('text-secondary')
             switch (window.location.pathname) {
+                case '/owner/dashboard':
+                    return $('#btn-home-owner').addClass('text-primary').removeClass('text-secondary');
+                    break;
+                case '/owner/pemasukan':
+                    return $('#btn-pemasukan').addClass('text-primary').removeClass('text-secondary');
+                    break;
+                case '/owner/inbox':
+                    return $('#btn-inbox').addClass('text-primary').removeClass('text-secondary');
+                    break;
                 case '/user/dashboard':
-                    return $('#btn-home').addClass('text-primary').removeClass('text-secondary');
+                    return $('#btn-home-user').addClass('text-primary').removeClass('text-secondary');
+                    break;
+                case '/user/cart':
+                    return $('#btn-cart-user').addClass('text-primary').removeClass('text-secondary');
                     break;
                 case '/user/favorite':
                     return $('#btn-favorite').addClass('text-primary').removeClass('text-secondary');
                     break;
-                case '/profile':
-                    return $('#btn-profile').addClass('text-primary').removeClass('text-secondary');
+                case '/user/profile':
+                    return $('#btn-profile-user').addClass('text-primary').removeClass('text-secondary');
+                    break;
+                case '/owner/profile':
+                    return $('#btn-profile-owner').addClass('text-primary').removeClass('text-secondary');
                     break;
                 default:
                     break;

@@ -93,6 +93,8 @@
 
 @section('script')
     <script>
+        checkURL()
+
         $.ajax({
             url : '/api/transaksi/pemasukan',
             type : "GET",

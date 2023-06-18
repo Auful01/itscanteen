@@ -30,7 +30,7 @@
 </style>
 <body >
 
-    <div class="mobile-container align-items-center shadow">
+    <div class="mobile-container align-items-center">
         <div class="text-center">
             <img src="{{asset('img/logo_its.png')}}" style="max-width: 200px;" class="img-fluid" alt="" srcset="">
             <div class="text-black-50" style="padding-top:20vh !important" >

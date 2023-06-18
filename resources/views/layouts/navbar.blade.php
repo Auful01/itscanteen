@@ -32,7 +32,7 @@
         <div class="col ">
             <div class="p-2 bd-highlight">
                 <a href="/owner/dashboard"  >
-                    <span class="material-symbols-rounded my-2 text-primary btn-item" id="btn-home">
+                    <span class="material-symbols-rounded my-2 text-primary btn-item" id="btn-home-owner">
                         home
                         </span>
                 </a>
@@ -49,8 +49,8 @@
         </div>
         <div class="col">
             <div class="p-2 bd-highlight">
-                <a href="/owner/inbox" class="btn-item">
-                    <span class="material-symbols-rounded my-2 text-secondary" id="btn-inbox">
+                <a href="/owner/inbox" >
+                    <span class="material-symbols-rounded my-2 btn-item text-secondary" id="btn-inbox">
                         inbox
                         </span>
                 </a>
@@ -59,7 +59,7 @@
         <div class="col">
             <div class="p-2 bd-highlight">
                 <a href="/owner/profile">
-                    <span class="material-symbols-rounded my-2 text-secondary btn-item" id="btn-profile">
+                    <span class="material-symbols-rounded my-2 text-secondary btn-item" id="btn-profile-owner">
                         person
                         </span>
                 </a>
@@ -89,8 +89,8 @@
         </div>
         <div class="col">
             <div class="p-2 bd-highlight">
-                <a href="/user/cart" class="btn-item">
-                    <span class="material-symbols-rounded my-2 text-secondary">
+                <a href="/user/cart">
+                    <span class="material-symbols-rounded my-2  text-secondary btn-item" id="btn-cart-user">
                         shopping_cart
                         </span>
                 </a>
@@ -99,7 +99,7 @@
         <div class="col">
             <div class="p-2 bd-highlight">
                 <a href="/user/profile">
-                    <span class="material-symbols-rounded my-2 text-secondary btn-item" id="btn-profile">
+                    <span class="material-symbols-rounded my-2 text-secondary btn-item" id="btn-profile-user">
                         person
                         </span>
                 </a>
