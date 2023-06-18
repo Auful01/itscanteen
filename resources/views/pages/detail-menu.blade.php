@@ -93,12 +93,15 @@
                 });
                 $('#nama').html(res.nama);
                 $('#favorite').data('id', res.id)
-                if (fav.includes(res.id.toString())) {
-                    // console.log("TRYE");
-                    $('#favorite').removeClass('far').addClass('fas')
-                }else{
-                    $('#favorite').removeClass('fas').addClass('far')
+                if (fav != null) {
 
+                    if (fav.includes(res.id.toString())) {
+                        // console.log("TRYE");
+                        $('#favorite').removeClass('far').addClass('fas')
+                    }else{
+                        $('#favorite').removeClass('fas').addClass('far')
+
+                    }
                 }
                 harga = res.harga
                 $('#harga').html(rupiah(res.harga));
